@@ -4,7 +4,7 @@ This template deploys a Visual Studio Development machine (visualstudio2019lates
 
 ```bash
 az group create --name rg-development --location westeurope
-az deployment group create --template-uri https://raw.githubusercontent.com/weslbo/development/main/azuredeploy.bicep --resource-group rg-development --parameters password=demo!pass123 
+az deployment group create --template-file azuredeploy.bicep --resource-group rg-development --parameters password=demo!pass123 
 ```
 
 Following additional tools are installed (with Chocolatey):
